@@ -38,3 +38,7 @@ export async function registerUser(userSignUp: IUserSignUp) {
     return { success: false, error: formatError(error) }
   }
 }
+
+export const SignInWithGoogle = async () => {
+  await signIn('google')
+}
