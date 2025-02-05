@@ -4,6 +4,13 @@ export const APP_SLOGAN =
 export const APP_DESCRIPTION =
   process.env.NEXT_PUBLIC_APP_DESCRIPTION ||
   'AIO Mart is an e-commerce platform that provides a wide range of products for all your needs.'
+
+export const SERVER_URL =
+  process.env.NEXT_PUBLIC_SERVER_URL || 'http://localhost:3000'
+
+export const SENDER_EMAIL = process.env.SENDER_EMAIL || 'onboarding@resend.dev'
+export const SENDER_NAME = process.env.SENDER_NAME || APP_NAME
+
 export const PAGE_SIZE = Number(process.env.PAGE_SIZE || 9)
 
 export const FREE_SHIPPING_MIN_PRICE = Number(
